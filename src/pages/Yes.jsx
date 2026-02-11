@@ -1,5 +1,5 @@
 import React from "react";
-import "./Yes.css";
+import "./yes.css";
 import celebrationVideo from "./celebration-video.mp4";
 
 export default function Yes() {

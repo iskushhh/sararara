@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Memories.css";
+import "./memories.css";
 
 export default function Memories() {
   const navigate = useNavigate();
