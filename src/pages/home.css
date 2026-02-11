@@ -1,0 +1,114 @@
+/* Container */
+.home-container {
+  height: 100vh;
+  background: linear-gradient(to bottom, #fff6f1, #ffe5d4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Georgia', serif;
+  position: relative;
+}
+
+/* Envelope */
+.envelope {
+  width: 340px;
+  height: 220px;
+  background: #ffd8c2;
+  border-radius: 6px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden; /* hide letter inside envelope */
+}
+
+/* Pull String */
+.string {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 60px;
+  background: #caa38a;
+  cursor: pointer;
+}
+
+.pull-handle {
+  width: 14px;
+  height: 14px;
+  background: #caa38a;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -7px;
+  left: -6px;
+}
+
+/* Letter */
+.letter {
+  position: absolute;
+  bottom: 0; /* start inside envelope */
+  left: 50%;
+  transform: translateX(-50%) translateY(100%); /* hidden below envelope */
+  width: 300px;
+  background: white;
+  border-radius: 4px;
+  transition: transform 1.5s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Slide out */
+.slide-out {
+  transform: translateX(-50%) translateY(-30px); /* pull out slightly */
+}
+
+/* Centered letter after envelope removed */
+.centered {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  transition: all 0.8s ease;
+}
+
+/* Letter Content */
+.letter-content {
+  padding: 25px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease 0.5s;
+}
+
+.expand {
+  max-height: 600px; /* reveal content */
+}
+
+/* Text */
+.letter h2 {
+  margin-bottom: 12px;
+}
+
+.letter p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Button */
+.next-btn {
+  margin-top: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: #ffbfa3;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.next-btn:hover {
+  background: #ff9f7f;
+  transform: scale(1.1);
+}
